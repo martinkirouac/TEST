@@ -1,0 +1,64 @@
+@model test.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = L["Login_Title"];
+}
+
+<style>
+    .login-section { min-height: calc(100vh - 73px); background: #f7f9fc; display: flex; align-items: center; padding: 60px 0; }
+    .login-card { background: #fff; border-radius: 20px; padding: 2.5rem; box-shadow: 0 4px 30px rgba(0,0,0,0.07); }
+    .login-card h2 { font-size: 1.8rem; font-weight: 800; color: #0d1f3c; margin-bottom: 0.3rem; }
+    .login-card .subtitle { color: #5a6a7e; font-size: 0.95rem; margin-bottom: 2rem; }
+    .form-control { border-radius: 10px; border: 1.5px solid #e2e8f0; padding: 0.75rem 1rem; font-size: 0.95rem; }
+    .form-control:focus { border-color: #1a6fbf; box-shadow: 0 0 0 3px rgba(26,111,191,0.1); }
+    .form-label { font-weight: 600; font-size: 0.88rem; color: #0d1f3c; }
+    .btn-login { background: #0d1f3c; color: #fff; border-radius: 50px; padding: 0.8rem; font-weight: 600; border: none; width: 100%; font-size: 1rem; }
+    .btn-login:hover { background: #1a3560; color: #fff; }
+    .credentials-hint { background: #f7f9fc; border-radius: 12px; padding: 1rem 1.2rem; font-size: 0.85rem; color: #5a6a7e; margin-top: 1.5rem; }
+    .credentials-hint strong { color: #0d1f3c; }
+</style>
+
+<section class="login-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-lg-4">
+                <div class="login-card">
+                    <h2>@L["Login_Title"]</h2>
+                    <p class="subtitle">@L["Login_Subtitle"]</p>
+
+                    <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" style="font-size:0.88rem;"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">@L["Login_Email"]</label>
+                            <input asp-for="Email" class="form-control" autocomplete="username" placeholder="your@email.com" />
+                            <span asp-validation-for="Email" class="text-danger" style="font-size:0.82rem;"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label">@L["Login_Password"]</label>
+                            <input asp-for="Password" class="form-control" autocomplete="current-password" placeholder="••••••••" />
+                            <span asp-validation-for="Password" class="text-danger" style="font-size:0.82rem;"></span>
+                        </div>
+                        <div class="mb-4">
+                            <label class="d-flex align-items-center gap-2" style="font-size:0.88rem; color:#5a6a7e; cursor:pointer;">
+                                <input class="form-check-input m-0" asp-for="RememberMe" />
+                                @L["Login_RememberMe"]
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-login">@L["Login_Submit"]</button>
+
+                        <div class="credentials-hint">
+                            <strong>@L["Login_DefaultAdmin"]</strong><br />
+                            admin@test.com / P4ssw0rd123!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

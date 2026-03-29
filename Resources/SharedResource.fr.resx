@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Navbar -->
+  <data name="Nav_Home" xml:space="preserve"><value>Accueil</value></data>
+  <data name="Nav_Admin" xml:space="preserve"><value>Admin</value></data>
+  <data name="Nav_UserManagement" xml:space="preserve"><value>Gestion des utilisateurs</value></data>
+  <data name="Nav_Logout" xml:space="preserve"><value>Déconnexion</value></data>
+  <data name="Nav_Login" xml:space="preserve"><value>Connexion</value></data>
+  <data name="Nav_GetStarted" xml:space="preserve"><value>Commencer</value></data>
+
+  <!-- Home -->
+  <data name="Home_Badge" xml:space="preserve"><value>Notre Plateforme</value></data>
+  <data name="Home_Heading1" xml:space="preserve"><value>Des solutions intelligentes pour</value></data>
+  <data name="Home_Heading2" xml:space="preserve"><value>de meilleurs résultats</value></data>
+  <data name="Home_Sub" xml:space="preserve"><value>MyApp comble le fossé entre l'excellence clinique et le soutien quotidien des patients. Explorez nos plateformes conçues pour autonomiser les utilisateurs et optimiser les résultats.</value></data>
+  <data name="Home_Dashboard" xml:space="preserve"><value>Tableau de bord ↓</value></data>
+  <data name="Home_SignIn" xml:space="preserve"><value>Se connecter</value></data>
+  <data name="Home_Info_Title" xml:space="preserve"><value>Plateforme MyApp</value></data>
+  <data name="Home_Info_Tagline" xml:space="preserve"><value>La solution intelligente pour la gestion quotidienne.</value></data>
+  <data name="Home_Info_Body" xml:space="preserve"><value>MyApp fournit un compagnon numérique de soutien qui s'adapte au rythme de la vie quotidienne de chaque utilisateur, offrant clarté et contrôle dans des flux de travail complexes.</value></data>
+  <data name="Home_Info_Quote" xml:space="preserve"><value>« Donner aux utilisateurs les outils pour passer de la gestion des tâches à la maîtrise de leurs résultats. »</value></data>
+  <data name="Home_Features_Label" xml:space="preserve"><value>Fonctionnalités clés</value></data>
+  <data name="Home_Feature1_Title" xml:space="preserve"><value>Tableau de bord intuitif</value></data>
+  <data name="Home_Feature1_Body" xml:space="preserve"><value>Un hub centralisé qui synthétise les informations complexes en informations exploitables.</value></data>
+  <data name="Home_Feature2_Title" xml:space="preserve"><value>Suivi en temps réel</value></data>
+  <data name="Home_Feature2_Body" xml:space="preserve"><value>Suivi continu avec alertes instantanées transmises à votre équipe au moment le plus opportun.</value></data>
+
+  <!-- Login -->
+  <data name="Login_Title" xml:space="preserve"><value>Bienvenue</value></data>
+  <data name="Login_Subtitle" xml:space="preserve"><value>Connectez-vous à votre compte pour continuer.</value></data>
+  <data name="Login_Email" xml:space="preserve"><value>Courriel</value></data>
+  <data name="Login_Password" xml:space="preserve"><value>Mot de passe</value></data>
+  <data name="Login_RememberMe" xml:space="preserve"><value>Se souvenir de moi</value></data>
+  <data name="Login_Submit" xml:space="preserve"><value>Se connecter</value></data>
+  <data name="Login_DefaultAdmin" xml:space="preserve"><value>Administrateur par défaut :</value></data>
+
+  <!-- User Management -->
+  <data name="Users_Title" xml:space="preserve"><value>Gestion des utilisateurs</value></data>
+  <data name="Users_NewUser" xml:space="preserve"><value>+ Nouvel utilisateur</value></data>
+  <data name="Users_Email" xml:space="preserve"><value>Courriel</value></data>
+  <data name="Users_Role" xml:space="preserve"><value>Rôle</value></data>
+  <data name="Users_Edit" xml:space="preserve"><value>Modifier</value></data>
+  <data name="Users_Delete" xml:space="preserve"><value>Supprimer</value></data>
+  <data name="Users_Create_Title" xml:space="preserve"><value>Créer un utilisateur</value></data>
+  <data name="Users_Password" xml:space="preserve"><value>Mot de passe</value></data>
+  <data name="Users_NewPassword" xml:space="preserve"><value>Nouveau mot de passe</value></data>
+  <data name="Users_PasswordHint" xml:space="preserve"><value>Laisser vide pour conserver le mot de passe actuel.</value></data>
+  <data name="Users_None" xml:space="preserve"><value>— Aucun —</value></data>
+  <data name="Users_Save" xml:space="preserve"><value>Enregistrer</value></data>
+  <data name="Users_Cancel" xml:space="preserve"><value>Annuler</value></data>
+  <data name="Users_Create_Btn" xml:space="preserve"><value>Créer</value></data>
+  <data name="Users_Edit_Title" xml:space="preserve"><value>Modifier l'utilisateur</value></data>
+  <data name="Users_Delete_Title" xml:space="preserve"><value>Supprimer l'utilisateur</value></data>
+  <data name="Users_Delete_Warning" xml:space="preserve"><value>Êtes-vous sûr de vouloir supprimer</value></data>
+  <data name="Users_Delete_Warning2" xml:space="preserve"><value>Cette action est irréversible.</value></data>
+  <data name="Users_Delete_Confirm" xml:space="preserve"><value>Supprimer</value></data>
+</root>

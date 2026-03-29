@@ -1,0 +1,65 @@
+@model test.Models.UserViewModel
+
+@{
+    ViewData["Title"] = L["Users_Edit_Title"];
+    var roles = ViewBag.Roles as List<string>;
+}
+
+<style>
+    .admin-page { padding: 50px 0; min-height: calc(100vh - 73px); background: #f7f9fc; }
+    .admin-card { background: #fff; border-radius: 16px; padding: 2rem 2.5rem; box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+    .admin-card h2 { font-size: 1.6rem; font-weight: 800; color: #0d1f3c; margin-bottom: 1.8rem; }
+    .form-label { font-weight: 600; font-size: 0.88rem; color: #0d1f3c; }
+    .form-control, .form-select { border-radius: 10px; border: 1.5px solid #e2e8f0; padding: 0.7rem 1rem; font-size: 0.93rem; }
+    .form-control:focus, .form-select:focus { border-color: #1a6fbf; box-shadow: 0 0 0 3px rgba(26,111,191,0.1); }
+    .btn-save { background: #0d1f3c; color: #fff; border-radius: 50px; padding: 0.6rem 1.8rem; font-weight: 600; border: none; }
+    .btn-save:hover { background: #1a3560; color: #fff; }
+    .btn-cancel { border: 2px solid #e2e8f0; color: #5a6a7e; border-radius: 50px; padding: 0.6rem 1.8rem; font-weight: 600; background: transparent; text-decoration: none; }
+    .btn-cancel:hover { border-color: #0d1f3c; color: #0d1f3c; }
+    .hint { font-size: 0.8rem; color: #a0aec0; margin-top: 0.3rem; }
+</style>
+
+<div class="admin-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-5">
+                <div class="admin-card">
+                    <h2>@L["Users_Edit_Title"]</h2>
+                    <form asp-action="Edit" method="post">
+                        <input asp-for="Id" type="hidden" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" style="font-size:0.88rem;"></div>
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">@L["Users_Email"]</label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger" style="font-size:0.82rem;"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label">@L["Users_NewPassword"]</label>
+                            <input asp-for="Password" class="form-control" placeholder="••••••••" />
+                            <div class="hint">@L["Users_PasswordHint"]</div>
+                            <span asp-validation-for="Password" class="text-danger" style="font-size:0.82rem;"></span>
+                        </div>
+                        <div class="mb-4">
+                            <label asp-for="Role" class="form-label">@L["Users_Role"]</label>
+                            <select asp-for="Role" class="form-select">
+                                <option value="">@L["Users_None"]</option>
+                                @foreach (var role in roles ?? [])
+                                {
+                                    <option value="@role" selected="@(Model.Role == role ? "selected" : null)">@role</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn-save">@L["Users_Save"]</button>
+                            <a asp-action="Index" class="btn-cancel">@L["Users_Cancel"]</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

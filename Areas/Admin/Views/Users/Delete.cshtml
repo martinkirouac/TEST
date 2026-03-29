@@ -1,0 +1,40 @@
+@using Microsoft.AspNetCore.Identity
+@model IdentityUser
+
+@{
+    ViewData["Title"] = L["Users_Delete_Title"];
+}
+
+<style>
+    .admin-page { padding: 50px 0; min-height: calc(100vh - 73px); background: #f7f9fc; }
+    .admin-card { background: #fff; border-radius: 16px; padding: 2rem 2.5rem; box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+    .admin-card h2 { font-size: 1.6rem; font-weight: 800; color: #0d1f3c; margin-bottom: 1rem; }
+    .delete-warning { background: #fff5f5; border: 1.5px solid #fed7d7; border-radius: 12px; padding: 1.2rem 1.5rem; color: #c53030; font-size: 0.93rem; margin-bottom: 1.8rem; }
+    .delete-warning strong { color: #0d1f3c; }
+    .btn-delete { background: #c53030; color: #fff; border-radius: 50px; padding: 0.6rem 1.8rem; font-weight: 600; border: none; }
+    .btn-delete:hover { background: #9b2c2c; color: #fff; }
+    .btn-cancel { border: 2px solid #e2e8f0; color: #5a6a7e; border-radius: 50px; padding: 0.6rem 1.8rem; font-weight: 600; background: transparent; text-decoration: none; }
+    .btn-cancel:hover { border-color: #0d1f3c; color: #0d1f3c; }
+</style>
+
+<div class="admin-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-5">
+                <div class="admin-card">
+                    <h2>@L["Users_Delete_Title"]</h2>
+                    <div class="delete-warning">
+                        @L["Users_Delete_Warning"] <strong>@Model.Email</strong>? @L["Users_Delete_Warning2"]
+                    </div>
+                    <form asp-action="Delete" method="post">
+                        <input name="id" type="hidden" value="@Model.Id" />
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn-delete">@L["Users_Delete_Confirm"]</button>
+                            <a asp-action="Index" class="btn-cancel">@L["Users_Cancel"]</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

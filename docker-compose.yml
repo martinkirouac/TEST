@@ -1,0 +1,23 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    platform: linux/arm64
+    container_name: test-sqlserver
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: P4ssw0rd123!
+      MSSQL_PID: Developer
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - test-network
+
+volumes:
+  sqlserver_data:
+
+networks:
+  test-network:
+    driver: bridge
+
