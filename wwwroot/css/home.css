@@ -1,0 +1,27 @@
+/* ===== Hero ===== */
+.hero { padding: 80px 0 60px; background: #fff; }
+.hero-badge { display: inline-block; background: #fde8e4; color: #c0392b; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; border-radius: 50px; padding: 0.3rem 0.9rem; margin-bottom: 1.4rem; }
+.hero h1 { font-size: 3.2rem; font-weight: 800; line-height: 1.15; color: #0d1f3c; margin-bottom: 0.3rem; }
+.hero h1 em { font-style: italic; color: #1a6fbf; }
+.hero-sub { color: #5a6a7e; font-size: 1rem; line-height: 1.7; max-width: 440px; margin: 1.4rem 0 2rem; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-img-wrap { border-radius: 20px; overflow: hidden; height: 400px; background: #e8f0fb; display: flex; align-items: center; justify-content: center; }
+.hero-img-placeholder { color: #a0aec0; font-size: 0.9rem; text-align: center; }
+
+/* ===== Info Section ===== */
+.info-section { background: #e8f4fb; padding: 70px 0; }
+.info-quote { background: #fff; border-radius: 14px; padding: 1.5rem 2rem; font-style: italic; color: #0d1f3c; font-size: 0.95rem; line-height: 1.7; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+.info-section h2 { font-size: 2rem; font-weight: 800; color: #0d1f3c; margin-bottom: 0.6rem; }
+.info-section .tagline { font-size: 1.05rem; font-weight: 600; color: #0d1f3c; margin-bottom: 1rem; }
+.info-section p { color: #5a6a7e; font-size: 0.95rem; line-height: 1.7; }
+
+/* ===== Features Section ===== */
+.features-section { padding: 70px 0; background: #fff; }
+.feature-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #a0aec0; margin-bottom: 2rem; }
+.feature-card { border-radius: 16px; padding: 2rem; border: 1px solid #eef0f3; height: 100%; }
+.feature-card.accent { background: #fef6f4; border-color: #fde8e4; }
+.feature-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; font-size: 1.3rem; }
+.feature-icon.blue { background: #e8f0fb; color: #1a6fbf; }
+.feature-icon.coral { background: #fde8e4; color: #c0392b; }
+.feature-card h5 { font-weight: 700; color: #0d1f3c; font-size: 1rem; margin-bottom: 0.5rem; }
+.feature-card p { color: #5a6a7e; font-size: 0.9rem; line-height: 1.6; margin: 0; }

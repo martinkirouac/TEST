@@ -4,19 +4,9 @@
     ViewData["Title"] = L["Login_Title"];
 }
 
-<style>
-    .login-section { min-height: calc(100vh - 73px); background: #f7f9fc; display: flex; align-items: center; padding: 60px 0; }
-    .login-card { background: #fff; border-radius: 20px; padding: 2.5rem; box-shadow: 0 4px 30px rgba(0,0,0,0.07); }
-    .login-card h2 { font-size: 1.8rem; font-weight: 800; color: #0d1f3c; margin-bottom: 0.3rem; }
-    .login-card .subtitle { color: #5a6a7e; font-size: 0.95rem; margin-bottom: 2rem; }
-    .form-control { border-radius: 10px; border: 1.5px solid #e2e8f0; padding: 0.75rem 1rem; font-size: 0.95rem; }
-    .form-control:focus { border-color: #1a6fbf; box-shadow: 0 0 0 3px rgba(26,111,191,0.1); }
-    .form-label { font-weight: 600; font-size: 0.88rem; color: #0d1f3c; }
-    .btn-login { background: #0d1f3c; color: #fff; border-radius: 50px; padding: 0.8rem; font-weight: 600; border: none; width: 100%; font-size: 1rem; }
-    .btn-login:hover { background: #1a3560; color: #fff; }
-    .credentials-hint { background: #f7f9fc; border-radius: 12px; padding: 1rem 1.2rem; font-size: 0.85rem; color: #5a6a7e; margin-top: 1.5rem; }
-    .credentials-hint strong { color: #0d1f3c; }
-</style>
+@section Styles {
+    <link rel="stylesheet" href="~/css/login.css" />
+}
 
 <section class="login-section">
     <div class="container">

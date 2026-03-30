@@ -1,0 +1,34 @@
+/* ===== Base ===== */
+* { font-family: 'Inter', sans-serif; }
+body { background: #fff; color: #0d1f3c; }
+.page-content { padding-top: 0; }
+
+/* ===== Navbar ===== */
+.navbar { background: #fff !important; border-bottom: 1px solid #eef0f3; padding: 1rem 0; }
+.navbar-brand { font-weight: 800; font-size: 1.2rem; color: #0d1f3c !important; }
+.navbar-nav .nav-link { color: #4a5568 !important; font-weight: 500; font-size: 0.95rem; padding: 0.4rem 1rem !important; }
+.navbar-nav .nav-link:hover { color: #0d1f3c !important; }
+.navbar-toggler { border: none; }
+.navbar-text { color: #4a5568 !important; font-size: 0.9rem; }
+
+/* Dropdown */
+.dropdown-menu { border: 1px solid #eef0f3; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+.dropdown-item { color: #4a5568; font-weight: 500; font-size: 0.9rem; }
+.dropdown-item:hover { color: #0d1f3c; background: #f7f9fc; }
+
+/* Language switcher */
+.lang-btn { background: none; border: 1.5px solid #e2e8f0; border-radius: 50px; padding: 0.25rem 0.8rem; font-size: 0.82rem; font-weight: 600; color: #4a5568; cursor: pointer; }
+.lang-btn:hover, .lang-btn.active { border-color: #0d1f3c; color: #0d1f3c; }
+
+/* ===== Shared Buttons ===== */
+.btn-cta { background: #0d1f3c; color: #fff; border-radius: 50px; padding: 0.5rem 1.4rem; font-weight: 600; font-size: 0.9rem; border: none; }
+.btn-cta:hover { background: #1a3560; color: #fff; }
+.btn-primary-dark { background: #0d1f3c; color: #fff; border-radius: 50px; padding: 0.75rem 1.8rem; font-weight: 600; border: none; display: inline-flex; align-items: center; gap: 0.4rem; }
+.btn-primary-dark:hover { background: #1a3560; color: #fff; }
+.btn-outline-dark-rounded { border: 2px solid #0d1f3c; color: #0d1f3c; border-radius: 50px; padding: 0.75rem 1.8rem; font-weight: 600; background: transparent; }
+.btn-outline-dark-rounded:hover { background: #0d1f3c; color: #fff; }
+
+/* ===== Forms ===== */
+.form-control { border-radius: 10px; border: 1.5px solid #e2e8f0; padding: 0.75rem 1rem; font-size: 0.95rem; }
+.form-control:focus { border-color: #1a6fbf; box-shadow: 0 0 0 3px rgba(26,111,191,0.1); }
+.form-label { font-weight: 600; font-size: 0.88rem; color: #0d1f3c; }
